@@ -152,7 +152,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
 
 
         if (command.getName().equalsIgnoreCase("tpa")) {
-            // Implementa la lógica para el comando /tpa aquí
             // Este comando podría usarse para enviar solicitudes de teletransporte a otros jugadores
             if (sender instanceof Player) {
                 if (args.length == 1) {
@@ -160,7 +159,7 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
                     String targetName = args[0];
                     Player target = Bukkit.getPlayer(targetName);
                     if (target != null) {
-                        // Implementa la lógica para enviar una solicitud de teletransporte
+                        //     la lógica para enviar una solicitud de teletransporte
                         player.sendMessage("Solicitud de teletransporte enviada a " + target.getName() + ".");
                         target.sendMessage(player.getName() + " te ha enviado una solicitud de teletransporte. Usa /tpaccept para aceptar.");
                         // Guarda la solicitud en algún lugar (por ejemplo, en un mapa de solicitudes)
@@ -180,11 +179,10 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("tpaccept")) {
-            // Implementa la lógica para el comando /tpaccept aquí
+            //     la lógica para el comando /tpaccept aquí
             // Este comando podría usarse para aceptar solicitudes de teletransporte pendientes
             if (sender instanceof Player) {
                 Player player = (Player) sender;
-                // Implementa la lógica para aceptar una solicitud de teletransporte
                 // Asegúrate de tener una forma de gestionar las solicitudes pendientes
                 player.sendMessage("Has aceptado la solicitud de teletransporte.");
                 return true;
@@ -195,7 +193,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("tpall")) {
-            // Implementa la lógica para el comando /tpall aquí
             // Este comando podría usarse para teletransportar a todos los jugadores a tu ubicación
             if (sender instanceof Player) {
                 Player player = (Player) sender;
@@ -213,7 +210,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("broadcast")) {
-            // Implementa la lógica para el comando /broadcast aquí
             // Este comando podría usarse para enviar un mensaje a todo el servidor
             if (args.length > 0) {
                 String message = String.join(" ", args);
@@ -226,7 +222,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("heal")) {
-            // Implementa la lógica para el comando /heal aquí
             // Este comando podría usarse para curar al jugador
             if (sender instanceof Player) {
                 Player player = (Player) sender;
@@ -241,7 +236,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("setspawn")) {
-            // Implementa la lógica para el comando /setspawn aquí
             // Este comando podría usarse para establecer el punto de aparición del mundo
             if (sender instanceof Player) {
                 Player player = (Player) sender;
@@ -256,7 +250,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("workbench")) {
-            // Implementa la lógica para el comando /workbench aquí
             // Este comando podría usarse para abrir un banco de trabajo para el jugador
             if (sender instanceof Player) {
                 Player player = (Player) sender;
@@ -269,7 +262,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("nick")) {
-            // Implementa la lógica para el comando /nick aquí
             // Este comando podría usarse para cambiar el nombre visible del jugador
             if (args.length == 1) {
                 String newNick = args[0];
@@ -289,7 +281,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("timeleft")) {
-            // Implementa la lógica para el comando /timeleft aquí
             // Este comando podría usarse para mostrar el tiempo restante hasta el próximo día
             long timeUntilDay = 24000 - (getServer().getWorlds().get(0).getTime() % 24000);
             long hours = timeUntilDay / 1000;
@@ -299,7 +290,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("weatherclear")) {
-            // Implementa la lógica para el comando /weatherclear aquí
             // Este comando podría usarse para limpiar el clima y establecer el tiempo en claro
             getServer().getWorlds().get(0).setStorm(false);
             getServer().getWorlds().get(0).setThundering(false);
@@ -308,7 +298,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("feed")) {
-            // Implementa la lógica para el comando /feed aquí
             // Este comando podría usarse para rellenar la barra de hambre del jugador
             if (sender instanceof Player) {
                 Player player = (Player) sender;
@@ -322,7 +311,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("gm")) {
-            // Implementa la lógica para el comando /gm aquí
             // Este comando podría usarse para cambiar el modo de juego del jugador
             if (sender instanceof Player) {
                 Player player = (Player) sender;
@@ -352,7 +340,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("spawn")) {
-            // Implementa la lógica para el comando /spawn aquí
             // Este comando podría usarse para teletransportar al jugador al punto de aparición del mundo
             if (sender instanceof Player) {
                 Player player = (Player) sender;
@@ -367,7 +354,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("setwarp")) {
-            // Implementa la lógica para el comando /setwarp aquí
             // Este comando podría usarse para establecer una ubicación de warp en el mundo
             if (sender instanceof Player) {
                 if (args.length == 1) {
@@ -388,7 +374,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("warp")) {
-            // Implementa la lógica para el comando /warp aquí
             // Este comando podría usarse para teletransportar al jugador a una ubicación de warp previamente establecida
             if (sender instanceof Player) {
                 if (args.length == 1) {
@@ -409,7 +394,6 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("vanish")) {
-            // Implementa la lógica para el comando /vanish aquí
             // Este comando podría usarse para activar o desactivar el modo invisible del jugador
             if (sender instanceof Player) {
                 Player player = (Player) sender;
@@ -433,11 +417,9 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("pet")) {
-            // Implementa la lógica para el comando /pet aquí
             // Este comando podría usarse para permitir a los jugadores obtener una mascota
             if (sender instanceof Player) {
                 Player player = (Player) sender;
-                // Implementa aquí la lógica para dar al jugador una mascota
                 EntityType petType = EntityType.WOLF;// Por ejemplo, una mascota lobo
                 // Crea la mascota y configura su dueño
                 // Añade la mascota a la lista de mascotas del jugador
@@ -469,15 +451,13 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("petrename")) {
-            // Implementa la lógica para el comando /petrename aquí
             // Este comando podría usarse para cambiar el nombre de una mascota
             if (sender instanceof Player) {
                 if (args.length == 1) {
                     Player player = (Player) sender;
                     if (playerPets.containsKey(player)) {
                         EntityType petType = playerPets.get(player);
-                        String newPetName = args[0];
-                        // Cambia el nombre de la mascota (depende de cómo esté implementado)
+                        String newPetName = args[0]:
                         sender.sendMessage(ChatColor.GREEN + "Has cambiado el nombre de tu mascota a: " + newPetName);
                         return true;
                     } else {
@@ -493,13 +473,11 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("petrelease")) {
-            // Implementa la lógica para el comando /petrelease aquí
             // Este comando podría usarse para liberar a una mascota
             if (sender instanceof Player) {
                 Player player = (Player) sender;
                 if (playerPets.containsKey(player)) {
                     EntityType pet = playerPets.get(player);
-                    // Libera a la mascota (depende de cómo esté implementado)
                     player.sendMessage(ChatColor.GREEN + "Has liberado a tu mascota de tipo " + pet + ".");
                     playerPets.remove(player);
                     return true;
@@ -538,13 +516,11 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("callpet")) {
-            // Implementa la lógica para el comando /callpet aquí
             // Este comando podría usarse para llamar a la mascota y hacer que siga al jugador
             if (sender instanceof Player) {
                 Player player = (Player) sender;
                 if (playerPets.containsKey(player)) {
                     EntityType pet = playerPets.get(player);
-                    // Aquí deberías implementar la lógica para hacer que la mascota siga al jugador.
                     // Puedes usar métodos como .teleport() para lograrlo.
                     pet.isSpawnable();
                     player.sendMessage("Tu mascota te sigue.");
