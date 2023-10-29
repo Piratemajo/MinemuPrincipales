@@ -457,7 +457,7 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
                     Player player = (Player) sender;
                     if (playerPets.containsKey(player)) {
                         EntityType petType = playerPets.get(player);
-                        String newPetName = args[0]:
+                        String newPetName = args[0];
                         sender.sendMessage(ChatColor.GREEN + "Has cambiado el nombre de tu mascota a: " + newPetName);
                         return true;
                     } else {
