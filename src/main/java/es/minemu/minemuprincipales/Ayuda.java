@@ -32,7 +32,6 @@ public class Ayuda implements CommandExecutor {
         sender.sendMessage("| /petlist - Mostrar la lista de mascotas");
         sender.sendMessage("| /petrename - Cambiar el nombre de una mascota");
         sender.sendMessage("| /petrelease - Liberar a una mascota");
-        sender.sendMessage("| /sun quitar la lluvia");
         sender.sendMessage(ChatColor.GOLD +"---------------[MinemuPrincipales]---------------");
         return true;
     }
