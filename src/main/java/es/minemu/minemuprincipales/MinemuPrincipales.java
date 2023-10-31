@@ -58,6 +58,7 @@ public class MinemuPrincipales extends JavaPlugin implements CommandExecutor {
         getCommand("god").setExecutor(this);
         getCommand("petcall").setExecutor(this);
         getCommand("ayuda").setExecutor(new Ayuda());
+        getCommand("helpop").setExecutor(new HelpOpCommand());
     }
 
     @Override
