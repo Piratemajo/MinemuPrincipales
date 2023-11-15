@@ -12,46 +12,25 @@ commands:
   curar:
     description: Restaura la salud del jugador al máximo
     usage: /curar
-  teleport:
-    description: Teletransporta al jugador a coordenadas específicas
-    usage: /teleport <x> <y> <z>
   fly:
     description: Activa o desactiva el modo de vuelo del jugador
     usage: /fly
-  sethome:
-    description: Establece la ubicación de inicio personalizada del jugador
-    usage: /sethome
-  home:
-    description: Teletransporta al jugador a su ubicación de inicio personalizada
-    usage: /home
-  tpa:
-    description: Solicita una solicitud de teletransporte a otro jugador
-    usage: /tpa <jugador>
-  tpaccept:
-    description: Acepta una solicitud de teletransporte pendiente
-    usage: /tpaccept
-  tpall:
-    description: Teletransporta a todos los jugadores a tu ubicación
-    usage: /tpall
   broadcast:
     description: Envía un mensaje a todo el servidor
     usage: /broadcast <mensaje>
   heal:
     description: Restaura la salud del jugador al máximo
     usage: /heal
-  setspawn:
-    description: Establece el punto de aparición predeterminado del mundo
-    usage: /setspawn
-  workbench:
+  craft:
     description: Abre un banco de trabajo para el jugador
-    usage: /workbench
+    usage: /craft
   nick:
     description: Cambia el nombre visible del jugador
     usage: /nick <nombre>
-  timeleft:
+  hora:
     description: Muestra el tiempo restante hasta el próximo día
-    usage: /timeleft
-  weatherclear:
+    usage: /hora
+  sun:
     description: Limpia el clima y establece el tiempo en claro
     usage: /weatherclear
   feed:
@@ -60,39 +39,26 @@ commands:
   gm:
     description: Cambia el modo de juego del jugador (solo para jugadores con permisos)
     usage: /gm <modo>
-  spawn:
-    description: Teletransporta al jugador al punto de aparición del mundo
-    usage: /spawn
-  setwarp:
-    description: Establece una ubicación de warp en el mundo
-    usage: /setwarp <nombre>
-  warp:
-    description: Teletransporta al jugador a una ubicación de warp previamente establecida
-    usage: /warp <nombre>
   vanish:
     description: Activa o desactiva el modo invisible del jugador
     usage: /vanish
-  pet:
-    description: Permite a los jugadores obtener una mascota
-    usage: /pet <tipo>
-  petlist:
-    description: Muestra la lista de mascotas del jugador
-    usage: /petlist
-  petrename:
-    description: Cambia el nombre de una mascota
-    usage: /petrename <nuevo_nombre>
-  petrelease:
-    description: Libera a una mascota
-    usage: /petrelease
   god:
     description: Modo dios
     usage: /god
-  petcall:
-    description: Llama a la mascota
-    usage: /petcall
   ayuda:
     description: ayuda de commandos
     usage: /ayuda
+  helpop:
+    description: ayuda admin
+    usage: /helpop
+  setSpawn:
+    description: Selecionar la zona para el spawn
+    usage: /setSpawn
+    permission: spawn.set
+  spawn:
+    description: Ir al spawn
+    usage: /spawn
+    permission: spawn.teleport
 
 
 permissions:
