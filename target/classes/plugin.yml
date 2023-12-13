@@ -1,0 +1,83 @@
+name: MinemuPrincipales
+version: '1.1.3-DEV'
+main: es.minemu.minemuprincipales.MinemuPrincipales
+api-version: '1.20'
+folia-supported: true
+author: Javier
+
+commands:
+  saludo:
+    description: Saluda al servidor
+    usage: /saludo
+  curar:
+    description: Restaura la salud del jugador al máximo
+    usage: /curar
+  fly:
+    description: Activa o desactiva el modo de vuelo del jugador
+    usage: /fly
+  broadcast:
+    description: Envía un mensaje a todo el servidor
+    usage: /broadcast <mensaje>
+  heal:
+    description: Restaura la salud del jugador al máximo
+    usage: /heal
+  craft:
+    description: Abre un banco de trabajo para el jugador
+    usage: /craft
+  nick:
+    description: Cambia el nombre visible del jugador
+    usage: /nick <nombre>
+  hora:
+    description: Muestra el tiempo restante hasta el próximo día
+    usage: /hora
+  sun:
+    description: Limpia el clima y establece el tiempo en claro
+    usage: /weatherclear
+  feed:
+    description: Rellena la barra de hambre del jugador
+    usage: /feed
+  gm:
+    description: Cambia el modo de juego del jugador (solo para jugadores con permisos)
+    usage: /gm <modo>
+  vanish:
+    description: Activa o desactiva el modo invisible del jugador
+    usage: /vanish
+  god:
+    description: Modo dios
+    usage: /god
+  ayuda:
+    description: ayuda de commandos
+    usage: /ayuda
+  helpop:
+    description: ayuda admin
+    usage: /helpop
+  setSpawn:
+    description: Selecionar la zona para el spawn
+    usage: /setSpawn
+    permission: spawn.set
+  spawn:
+    description: Ir al spawn
+    usage: /spawn
+    permission: spawn.teleport
+  discord:
+    description:  Comando de saber el discord
+    usage: /discord
+    permission: discord
+  sethome:
+    description: Ponerte una casa
+    usage: /sethome
+  home:
+    description: ir al home
+    usage: /home
+  reglas:
+    description: reglas del servidor
+    usage: /reglas
+
+
+permissions:
+  MinemuPrincipal.vanish:
+    default: op
+  MinemuPrincipal.gm:
+    default: op
+  MinemuPrincipal.god:
+    default: op
